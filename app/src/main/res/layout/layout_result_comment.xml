@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="55dp"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/result_comment_tv_comment_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        android:text="0"
+        android:textColor="@color/colorLightPurpleColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_toRightOf="@id/result_comment_tv_comment_total"
+        android:text=" 개의 댓글"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/result_comment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_comment_tv_comment_total"
+        android:layout_marginBottom="30dp" />
+
+
+</RelativeLayout>

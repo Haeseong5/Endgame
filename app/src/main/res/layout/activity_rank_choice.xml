@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".src.game.rank.RankChoiceActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="#121212"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/rank_choice_btn_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onClickListener"
+                    android:src="@drawable/navi_btn_close" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rank_choice_bt_kmbti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_kmbti_shape"
+                android:onClick="onClickListener"
+                android:text="@string/korea_mbti_game_title"
+                android:textColor="@color/colorYellowKmbti"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_fish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_fish_shape"
+                android:onClick="onClickListener"
+                android:text="@string/fish_game_title"
+                android:textColor="@color/colorGreenFish"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_wash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_wash_shape"
+                android:onClick="onClickListener"
+                android:text="@string/wash_game_title"
+                android:textColor="@color/colorPurpleWash"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_ramen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_ramen_shape"
+                android:onClick="onClickListener"
+                android:text="@string/ramen_game_title"
+                android:textColor="@color/colorRedRamen"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_values_shape"
+                android:onClick="onClickListener"
+                android:text="@string/value_game_title"
+                android:textColor="@color/colorBlueValues"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_blue_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="검정색 vs. 흰색"
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_bluewhite_greengold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="파흰 vs. 초금"
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_grey_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="회색 vs 노랑색"
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_mg_pw_ver1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="민트회색 vs. 핑크회색 Ver1."
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_mg_pw_ver2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="민트회색 vs. 핑크회색 Ver2."
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/rank_choice_bt_color_whiteggold_blueblack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_rank_color_shape"
+                android:onClick="onClickListener"
+                android:text="흰금 vs. 파검"
+                android:textColor="@color/colorLightPurpleColor"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

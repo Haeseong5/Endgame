@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlack"
+    android:onClick="customOnClick"
+    android:orientation="vertical"
+    tools:mContext=".src.login.LoginActivity">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/login_btn_google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:text="@string/login_tv_or"
+        android:textColor="@color/colorLoginOrGrey" />
+
+    <EditText
+        android:id="@+id/login_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="11dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/login_et_email"
+        android:paddingLeft="19dp"
+        android:paddingTop="13dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/colorLoginTextBlack"
+        android:textColorHint="@color/colorLoginHintGrey"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/login_et_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@color/colorWhite"
+        android:hint="@string/login_et_pw"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="19dp"
+        android:paddingTop="13dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/colorLoginTextBlack"
+        android:textColorHint="@color/colorLoginHintGrey"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/login_btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="22dp"
+        android:background="@color/colorWhite"
+        android:onClick="customOnClick"
+        android:src="@drawable/btn_login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/login_tv_user"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/login_tv_bar"
+            android:textColor="@color/colorLoginOrGrey" />
+
+        <TextView
+            android:id="@+id/login_tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="customOnClick"
+            android:padding="5dp"
+            android:text="@string/login_tv_signup"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

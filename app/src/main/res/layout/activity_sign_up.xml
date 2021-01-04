@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlack"
+    android:gravity="center_vertical"
+    android:onClick="customOnClick"
+    android:orientation="vertical"
+    tools:mContext=".src.signup.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="36dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sign_up_ll_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom_red"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+            <EditText
+                android:id="@+id/sign_up_et_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/signup_et_nickname"
+                android:inputType="text"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sign_up_iv_nickname_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_et_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_up_tv_validate_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/signup_tv_empty_nickname"
+            android:textColor="@color/colorSignUpValidationRed"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:id="@+id/sign_up_ll_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom_red"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+            <EditText
+                android:id="@+id/sign_up_et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/signup_et_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sign_up_iv_email_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_et_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_up_tv_validate_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/signup_tv_empty_email"
+            android:textColor="@color/colorSignUpValidationRed"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/sign_up_ll_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom_red"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+            <EditText
+                android:id="@+id/sign_up_et_pw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/signup_et_pw"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sign_up_iv_pw_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_et_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_up_tv_validate_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/signup_tv_empty_pw"
+            android:textColor="@color/colorSignUpValidationRed"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/sign_up_ll_pw_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_bottom_red"
+            android:orientation="horizontal"
+            android:paddingBottom="13dp">
+
+            <EditText
+                android:id="@+id/sign_up_et_pw_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/signup_et_pw_confirm"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/sign_up_iv_pw_confirm_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_et_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_up_tv_validate_pw_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/signup_tv_empty_pw_confirm"
+            android:textColor="@color/colorSignUpValidationRed"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/sign_up_iv_start_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@color/colorWhite"
+            android:onClick="customOnClick"
+            android:src="@drawable/btn_start_app" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_tv_already_user"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:text="@string/signup_tv_bar"
+                android:textColor="@color/colorSignUpBarGrey" />
+
+            <TextView
+                android:id="@+id/sign_up_tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="customOnClick"
+                android:padding="5dp"
+                android:text="@string/signup_tv_login"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_game" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/game_values_fl_honor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_weight="1"
+            android:layout_gravity="right"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintBottom_toTopOf="@+id/game_values_fl_family"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <CheckBox
+                android:id="@+id/values_cb_honors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:button="@drawable/state_values_honer"
+                android:onClick="onClickListener" />
+
+            <TextView
+                android:id="@+id/values_tv_honors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/num_default_background"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/game_values_fl_family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_weight="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="70dp"
+            app:layout_constraintBottom_toTopOf="@id/game_values_fl_money"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/game_values_fl_honor">
+
+            <CheckBox
+                android:id="@+id/values_cb_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_values_family"
+                android:onClick="onClickListener" />
+
+            <TextView
+                android:id="@+id/values_tv_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/num_default_background"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/game_values_fl_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_weight="1"
+            android:layout_gravity="end"
+            android:layout_marginEnd="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_values_fl_friend"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_values_fl_family">
+
+            <CheckBox
+                android:id="@+id/values_cb_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_values_money"
+                android:onClick="onClickListener" />
+
+            <TextView
+                android:id="@+id/values_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/num_default_background"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/game_values_fl_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_weight="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_values_fl_money">
+
+            <CheckBox
+                android:id="@+id/values_cb_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_values_friend"
+                android:onClick="onClickListener" />
+
+            <TextView
+                android:id="@+id/values_tv_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/num_default_background"
+                android:gravity="center" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/values_finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_values_finish" />
+    </LinearLayout>
+</LinearLayout>

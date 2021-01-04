@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorYellowKmbti">#f2c200</color>
+    <color name="colorGreenFish">#028e53</color>
+    <color name="colorPurpleWash">#7639b6</color>
+<!--    <color name="colorDarkGrey">#121212</color>-->
+    <color name="colorDarkGrey">#343434</color>
+
+    <color name="colorBlueValues">#1f5dca</color>
+    <color name="colorRedRamen">#e61f3d</color>
+    <color name="colorGrey">#999999</color>
+    <color name="colorLightPurpleColor">#bea9cb</color>
+
+    <color name="colorLoginOrGrey">#898a8f</color>
+    <color name="colorLoginHintGrey">#707070</color>
+    <color name="colorLoginTextBlack">#121212</color>
+
+    <color name="colorBackgroundBlack">#121212</color>
+
+    <color name="colorSignUpBorderGrey">#e4e4e4</color>
+    <color name="colorSignUpBarGrey">#707070</color>
+    <color name="colorSignUpValidationRed">#fe0000</color>
+
+    <color name="colorReportHintGrey">#999999</color>
+
+    <color name="dialogTimeOutCancel">#999999</color>
+    <color name="dialogTimeOutOk">#121212</color>
+</resources>

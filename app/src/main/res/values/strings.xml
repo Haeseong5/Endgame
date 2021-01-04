@@ -1,0 +1,98 @@
+<resources>
+    <!--광고-->
+    <string name="app_name">논란종결</string>
+
+    <string name="loading">로딩중입니다.</string>
+    <string name="network_error">네트워크 연결이 원활하지 않습니다.</string>
+    <string name="backPressed">\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.</string>
+    <string name="googleSingInError">정상적으로 로그인 하지 못했습니다\n관리자에게 문의해주세요</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="login_tv_or">or</string>
+    <string name="login_et_email">이메일</string>
+    <string name="login_et_pw">비밀번호</string>
+    <string name="login_tv_user">아직 회원이 아니신가요?</string>
+    <string name="login_tv_bar">|</string>
+    <string name="login_tv_signup">회원가입</string>
+    <string name="login_empty_email">이메일을 입력해주세요</string>
+    <string name="login_empty_pw">비밀번호를 입력해주세요</string>
+
+    <string name="signup_et_nickname">닉네임</string>
+    <string name="signup_et_email">이메일</string>
+    <string name="signup_et_pw">비밀번호</string>
+    <string name="signup_et_pw_confirm">비밀번호 확인</string>
+    <string name="signup_tv_already_user">이미 회원이신가요?</string>
+    <string name="signup_tv_bar">|</string>
+    <string name="signup_tv_login">로그인</string>
+    <string name="signup_tv_empty_nickname">닉네임을 입력하세요</string>
+    <string name="signup_tv_empty_email">이메일을 입력하세요</string>
+    <string name="signup_tv_empty_pw">비밀번호를 입력하세요</string>
+    <string name="signup_tv_empty_pw_confirm">비밀번호를 한번 더 입력하세요</string>
+    <string name="signup_tv_duplicate_nickname">중복된 닉네임입니다</string>
+    <string name="signup_tv_duplicate_email">중복된 메일입니다</string>
+    <string name="signup_tv_match_nickname">닉네임이 형식에 맞지 않습니다</string>
+    <string name="signup_tv_match_email">이메일이 형식에 맞지 않습니다</string>
+    <string name="signup_tv_match_pw">비밀번호가 형식에 맞지 않습니다</string>
+    <string name="signup_tv_incorrect_pw">비밀번호가 일치하지 않습니다</string>
+    <string name="signup_flag_can_signup">회원가입 조건에 모두 만족해야 합니다</string>
+
+    <string name="report_appbar_title">퀴즈 제보</string>
+    <string name="report_game_name">게임 이름</string>
+    <string name="report_game_name_example">ex) 한국식 MBTI</string>
+    <string name="report_game_desc">설명</string>
+    <string name="report_game_desc_example">친구들이나 지인들과 함께 공유할 수 있는 재미있고 가벼운 논란거리를 제보해주세요. 좋은 아이디어로 채택되면 소정의 상품을 보내드립니다!</string>
+    <string name="report_game_desc_hint">Input text</string>
+    <string name="report_kakao_id">카카오톡 ID</string>
+    <string name="report_kakao_example">ex) id123</string>
+    <string name="report_empty_value">빈칸을 입력해주세요</string>
+    <string name="report_success">게임 제보에 성공하였습니다</string>
+
+    <!--의견 제보-->
+    <string name="email">ted@softsquared.com</string>
+    <string name="request">불편 / 개선사항 보내기</string>
+
+    <!--GAME TITLE-->
+    <string name="what_color_game_title">무슨 색이게?</string>
+    <string name="fish_game_title">붕어빵 어디서부터 먹니?</string>
+    <string name="korea_mbti_game_title">한국식 MBTI</string>
+    <string name="ramen_game_title">라면 끓이기</string>
+    <string name="value_game_title">가치관</string>
+    <string name="wash_game_title">씻는 순서</string>
+
+    <string name="result_title">결과</string>
+    <string name="profile_title">마이페이지</string>
+
+
+    <string name="post_result_success">결과 저장에 성공하였습니다</string>
+    <string name="post_result_fail">결과 저장에 실패하였습니다</string>
+
+    <!--notification-->
+    <string name="notify_no_selected">모든 항목을 선택해주세요!</string>
+    <string name="notify_color_no_select">항목을 선택해주세요!</string>
+
+    <!--button text-->
+    <string name="result_button_text">다른 사람의 결과도 궁금하다면? ></string>
+
+    <!--kakao-->
+    <string name="kakao_app_key" translatable="false">c192a2e571cf20e29709d003653a9c75</string>
+    <string name="kakao_scheme" translatable="false">kakaoc192a2e571cf20e29709d003653a9c75</string>
+    <string name="kakaolink_host" translatable="false">kakaolink</string>
+    <string name="kakao_share_fail">카카오톡이 설치 되어 있는지 확인해 주세요</string>
+
+    <!--Rank-->
+    <string name="rank_toolbar_title">랭킹 보기</string>
+
+    <!--Dialog-->
+    <string name="dialog_custom">댓글 삭제</string>
+    <string name="dialog_custom_contents">댓글을 삭제하시겠습니까?</string>
+    <string name="dialog_custom_cancel">아니요</string>
+    <string name="dialog_custom_ok">네</string>
+
+    <string name="dialog_time_out_title">시간초과!</string>
+    <string name="dialog_time_out_contents">다시 도전하시겠습니까?</string>
+
+    <!--Setting-->
+    <string name="setting_title">설정</string>
+    <string name="app_info">논란들을 종결시키는 본격 타임 킬링 애플리케이션\n\n나의 선택들과 댓글이 서버에 저장되어 앱을 삭제 했다가 재 설치해도 기록들이 남아있습니다.\n간편한 회원가입 또는 구글 아이디 로그인으로 앱을 쉽게 사용하실 수 있습니다 :)\n\n정기적인 업데이트를 통해 더욱더 재미있는 콘텐츠로 함께하겠습니다!</string>
+
+</resources>

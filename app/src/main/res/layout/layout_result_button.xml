@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_marginBottom="50dp">
+    <ImageView
+        android:id="@+id/result_iv_save_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_gallery"
+        android:layout_marginBottom="15dp"
+        android:onClick="onClickListener"/>
+    <ImageView
+        android:id="@+id/result_iv_kakao_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_kakao"
+        android:onClick="onClickListener"/>
+</LinearLayout>

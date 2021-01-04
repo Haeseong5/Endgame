@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:mContext=".src.main.ThemeActivity">
+
+    <include layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/theme_korea_mbti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_kmbti" />
+
+            <ImageView
+                android:id="@+id/theme_fishbread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_fishbread" />
+
+            <ImageView
+                android:id="@+id/theme_wash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_wash" />
+
+            <ImageView
+                android:id="@+id/theme_ramen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_ramen" />
+
+            <ImageView
+                android:id="@+id/theme_values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_values" />
+
+            <ImageView
+                android:id="@+id/theme_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_color" />
+
+            <ImageView
+                android:id="@+id/theme_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:onClick="customOnClick"
+                android:src="@drawable/btn_add" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

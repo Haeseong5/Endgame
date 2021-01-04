@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/report_ll_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="customOnClick"
+    android:orientation="vertical"
+    tools:mContext=".src.game.report.ReportActivity">
+
+    <include layout="@layout/appbar_report" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/report_kakao_id"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/report_et_kakao_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_bottom_white"
+                android:hint="@string/report_kakao_example"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorReportHintGrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/report_game_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/report_et_game_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_border_bottom_white"
+                android:hint="@string/report_game_name_example"
+                android:paddingBottom="3dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorReportHintGrey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/report_game_desc"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/report_game_desc_example"
+                android:textColor="@color/colorReportHintGrey"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/report_et_game_desc"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/colorWhite"
+                android:gravity="top"
+                android:textSize="14sp"
+                android:hint="@string/report_game_desc_hint"
+                android:padding="16dp"
+                android:textColor="@color/colorReportHintGrey"
+                android:textColorHint="@color/colorReportHintGrey" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/report_iv_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:onClick="customOnClick"
+            android:src="@drawable/btn_report_send_idea" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#2c2d2e"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="6dp">
+
+    <EditText
+        android:id="@+id/rank_et_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_insert_comment"
+        android:hint="댓글을 입력하세요 ..."
+        android:maxLines="4"
+        android:paddingStart="18dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/rank_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@android:color/transparent"
+        android:onClick="customOnClick"
+        android:src="@drawable/btn_send" />
+</LinearLayout>

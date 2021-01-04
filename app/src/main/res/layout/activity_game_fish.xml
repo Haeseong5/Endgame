@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:mContext=".src.game.kmbti_game.FishActivity">
+    <include
+        layout="@layout/toolbar_game"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:layout_gravity="end">
+            <CheckBox
+                android:id="@+id/fish_tail_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_fish_tail"
+
+                android:layout_gravity="end"
+                android:onClick="onClickListener"
+                />
+
+            <TextView
+                android:id="@+id/fish_tail_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/num_default_background"
+                android:gravity="center" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+
+            android:layout_marginEnd="10dp">
+
+            <CheckBox
+                android:id="@+id/fish_head_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_fish_head"
+                android:onClick="onClickListener"
+                />
+
+            <TextView
+                android:id="@+id/fish_head_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_default_background"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="13dp"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp">
+            <CheckBox
+                android:id="@+id/fish_body_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/state_fish_body"
+                android:onClick="onClickListener" />
+            <TextView
+                android:id="@+id/fish_body_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/num_default_background"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/fish_finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_fishbread_finish"
+            android:onClick="onClickListener" />
+    </LinearLayout>
+</LinearLayout>
